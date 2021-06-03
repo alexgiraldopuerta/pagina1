@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>mi primera pagina</title>
+        <meta charset="UTF-8">
+        <meta name="title" content="mi primera pagina">
+        <link rel="stylesheet" href="sin.css">
+
+
+    </head>
+    
+    <body>
+    <header>
+        <img class="logo" src="logo22.png" 
+alt="Usabilidad" width="80" height="100">
+<br>
+        <h1>MI primera pagina</h1>
+
+    </header>
+<ul class="menu">
+   <li> <a href="#etiquetas_de_texto">texto</a></li>
+   <li><a  href="#etiquetas_formulario">formulario</a></li>
+   <li><a href="#etiquetas_de_tablas">tablas</a></li>
+   <li><a href="#etiquetas_iframe">iframe</a></li>
+</ul>
+        <a name="etiquetas_de_texto"></a>
+        <h2>en construccion de pagina</h2> 
+
+        <ol>
+            <li>Lenguaje de marcas</li>
+                <ul>
+                    <li>Definiciones. Etiquetas y atributos</li>
+                    <li>Etiquetas básicas HTML</li>
+                </ul>
+            <li>Enlaces y formatos de texto</li>
+                <ul>
+                    <li>Enlaces internos y externos</li> 
+                    <li>Formato de texto</li>
+                    <li>Listas y tablas</li>   
+
+                </ul>
+
+
+        </ol>
+
+        <p>Elaborar una <i>página web</i> estática, que cumpla con la sintaxis <b><abbr title="Hypertext Markup Language">Html5</abbr></b>para etiquetas y sus atributos. </p>
+        <hr>
+        <a name="etiquetas_formulario"></a>
+        <form name="formlurio1" style="width: 200;">
+            <fieldset style="width: 200;">
+                <legend><h2>Que se sabes de html</h2></legend>
+                    
+               <!-- <label>Nombre y Apellido</label>
+                <input name="nombre" type="text" maxlength="30"  required  >
+                <br>-->
+                <label >Nombre</label>
+                <input name="nombresolo" type="text" maxlength="20" pattern="[a-zA-Z\s]+" required  >
+
+                <label>Edad</label>
+                <input name="edad" type="number" required>
+                <br> <br>
+                <label>fecha de nacimiento</label>
+                <input type="date" name="nacimiento" id="nacimiento" required>
+                <br> <br>
+                <label> email</label>
+                <input type="email" name="email" id="email" required>
+                <br><br>
+
+                <label><abbr title="que tanto sabe de HTML5">conocimiento</abbr></label>
+                   <select name="conocimiento" id="conocimiento">
+                        <option value="1">bajo</option>
+                        <option value="2">medio</option>
+                        <option value="3">alto</option>
+                   </select>
+                   
+                   <label>que tanto desea aprender</label>
+                   <br><br>
+                   <label >mucho</label>
+                   <input type="radio" name="quetanto" id="quetanto" value="0">
+                   <label >poco</label>
+                   <input type="radio" name="quetanto" id="quetanto" value="1">
+                   <br><br>
+                   <label>le gusta programar</label>
+                    <input type="checkbox" name="legusta" id="legusta">                   
+                    <br>
+                   <label>password</label>
+                   <input type="password" name="password" id="password" maxlength="16" pattern="^(?=.*\d)(?=.*[\u0021-\u002b\u003c-\u0040])(?=.*[A-Z])(?=.*[a-z])\S{8,16}$" required >
+                    <br>
+                    <input type="text" name="cp" placeholder="codigo postal" id="cp" pattern="[0-9]{5}" required  >
+
+                   <br>
+                   <label >suba un archivo html</label>
+                   <input type="file" name="archivo" id="archivo">
+
+                    <button id="enviar" name="enviar" type="submit">Envia</button>
+
+            </fieldset>
+
+        </form>
+<hr>
+
+<a name="etiquetas_de_tablas"></a>
+<table border="1" style="width: 200px;" >
+<caption>estadistica</caption>
+<colgroup>
+    <col span="1" style="background-color: aqua">
+    <col span="1" style="background-color: aquamarine">
+    <col span="1" style="background-color: aqua">
+    <col span="1" style="background-color: cadetblue;">
+</colgroup>
+<tr>
+    <th>numero</th>
+    <th>nombre</th>
+    <th>conocimiento</th>
+    <th>gusta</th>
+ </tr>
+<tr>
+    <th>1</th>
+    <th>manuel</th>
+    <th>alto</th>
+    <th>si gusta</th>
+</tr>
+<tr>
+    <th>2</th>
+    <th>diego</th>
+    <th>alto</th>
+    <th>no gusta</th>
+</tr>
+<tr>
+    <th>3</th>
+    <th>sebastian</th>
+    <th>medio</th>
+    <th>si gusta</th>
+</tr>
+
+
+</table>
+<br><br>
+<table border="1" >
+    <caption>estadistica</caption>
+    <colgroup>
+        <col span="1" style="background-color: aqua">
+        <col span="1" style="background-color: aquamarine">
+        <col span="1" style="background-color: aqua">
+        <col span="1" style="background-color: cadetblue;">
+    </colgroup>
+    <tr>
+        <th>numero</th>
+        <th>nombre</th>
+        <th>conocimiento</th>
+        <th>gusta</th>
+     </tr>
+    <tr>
+        <th rowspan="2">1</th>
+        <th>manuel</th>
+        <th colspan="2">alto</th>
+        </tr>
+    <tr>
+        <th>diego</th>
+        <th colspan="2" rowspan="2">alto</th>
+        </tr>
+    <tr>
+        <th>3</th>
+        <th>sebastian</th>
+        </tr>
+    
+    
+    </table>
+
+<hr>
+
+<br>
+
+<a name="etiquetas_iframe"></a>
+
+<h3 class="im" >imagen</h3>
+<img src="Neira FINAL333.png" 
+alt="Usabilidad" width="400" height="500">
+<br><br><br><br>
+<h3>etiqueta iframe </h3>
+<br><br><br><br>
+<div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=manizales&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2piratebay.org"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net">embedded google search</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div></div>
+<br><br><br><br>
+
+<h3>etiqueta iframe video </h3>
+
+
+
+<h3>mapa de imagen</h3>
+
+<img src="1.png" alt="figuras" usemap="#formas" ismap="ismap">
+<map name="formas" id="formas">
+    <area shape="rect" coords="85,80,227,225" href="#etiquetas_formulario">
+    <area shape="circle" coords="525,120,100" href="#etiquetas_de_texto" alt="circulo">
+    <area shape="poly" coords="112,308,300,300,544,337,787,225,662,434" href="#etiquetas_de_tablas" alt="poli">
+</map>
+
+<br>
+
+
+
+<iframe width="600" height="400" src="https://www.youtube.com/embed/PScsFz4dPgo" title="YouTube video player" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<a href="https://www.lapatria.com/" target="_blank">la patria</a>
+
+<a href="#etiquetas_de_texto">texto</a>
+
+<br>
+<a  href="#etiquetas_formulario">formulario</a>
+<a href="#etiquetas_de_tablas">tablas</a>
+<a href="#etiquetas_iframe">iframe</a>
+
+
+
+
+</body>
+<footer>
+<hr>
+<p>hola mundo</p>
+
+
+<hr>
+</footer>
+</html> 
+        
+
+
